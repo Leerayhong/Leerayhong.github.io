@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /*--自己定義一個CSS*/
+    .imgcss{
+      width:50px;
+      height:50px ;
+    }
+  </style>
+  <script>
+    function bigImg(x) {
+      x.style.height = "100%";
+      x.style.width = "100%";
+    }
+    function smallImg(x) {
+      x.style.height = "50px";
+      x.style.width = "50px";
+    }
+  </script>
+</head>
+<body>
+  <!--navbar-->
+   <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active"onclick="document.getElementById('studyprocess').click()" href="#studyprocess">學習經歷</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">課外學習</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">社團服務</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <h1>學習歷程</h1>
+</div>
+  <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="abc.png" alt="證書" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="chicago.jpg" alt="獎盃" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="ny.jpg" alt="獎狀" class="d-block w-100">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <button type="button" id="studyprocess"data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#demo">展開</button>
+      <div id="demo" class="collapse">
+        學習經歷
+        <img src="img/internet/learn.png" alt="學習心智圖" class="d-block" style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <button type="button" id=""data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#demo">展開</button>
+      <div id="demo" class="collapse">
+      <p>2023淡江大學機器人寒假高中營隊</p>
+      <img src="img/internet/battalion/S__14467090.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467092.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467093.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467094.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467095.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467096.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467097.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467098.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467099.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467100.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467101.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467103.jpg" alt="營隊" class="style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467104.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467105.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467106.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467107.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467108.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467109.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467110.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+    </div>
+    <div class="col-sm-4">
+      <h3>校內探究</h3>
+      <p>自然實驗</p>
+      <img src="img/internet/explore/S__14467074.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467076.jpg" alt="探究" class=""style="height:100%;width:100%" 
+      <img src="img/internet/explore/S__14467077.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467078.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467079.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467080.jpg" alt="探究" class=""style="height:100%;width:100%" 
+      <img src="img/internet/explore/S__14467081.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467082.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467083.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467074.jpg" alt="探究" class=""style="height:100%;width:100%" 
+      <img src="img/internet/explore/S__14467074.jpg" alt="探究" class=""style="height:100%;width:100%" 
+            
+      
+    </div>
+  </div>
+</div>
+  </div>
+  <button type="button" id=""data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#demo">展開</button>
+  <div id="demo" class="collapse">
+    學習經歷
+  </div>
+
+
+</body>
