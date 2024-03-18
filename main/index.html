@@ -14,17 +14,6 @@
     }
   </style>
   <script>
-    function changeImg(x) {
-      var defvar="50px";
-     if(x.style.height==defvar || x.style.height==""){
-       x.style.height = "100%";
-       x.style.width = "100%";
-     }else{
-       x.style.height = defvar;
-       x.style.width = defvar;
-     }
-    }
-    
     function bigImg(x) {
       x.style.height = "100%";
       x.style.width = "100%";
@@ -44,10 +33,10 @@
           <a class="nav-link active"onclick="document.getElementById('studyprocess').click()" href="#studyprocess">學習經歷</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"onclick="document.getElementById('studyskill').click()" href="#studyskill">課外學習</a>
+          <a class="nav-link" href="#">課外學習</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"onclick="document.getElementById('study').click()" href="#study">社團服務</a>
+          <a class="nav-link" href="#">社團服務</a>
         </li>
       </ul>
     </div>
@@ -69,13 +58,13 @@
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="website/abc.png" alt="證書" class="d-block w-100">
+        <img src="abc.png" alt="證書" class="d-block w-100">
       </div>
       <div class="carousel-item">
-        <img src="website/chicago.jpg" alt="獎盃" class="d-block w-100">
+        <img src="chicago.jpg" alt="獎盃" class="d-block w-100">
       </div>
       <div class="carousel-item">
-        <img src="website/ny.jpg" alt="獎狀" class="d-block w-100">
+        <img src="ny.jpg" alt="獎狀" class="d-block w-100">
       </div>
     </div>
     
@@ -90,60 +79,77 @@
 <div class="container-fluid mt-5">
   <div class="row">
     <div class="col-sm-4">
-      <button type="button" id="studyprocess"data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#studyprocessdiv">展開</button>
-      <div id="studyprocessdiv" class="collapse">
+      <button type="button" id="studyprocess"data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#demo">展開</button>
+      <div id="demo" class="collapse">
         學習經歷
-        <img src="website/learn.png" alt="學習心智圖" class=""style="height:50px;width:50px"onclick="changeImg(this)">
+        <img src="img/internet/learn.png" alt="學習心智圖" class="d-block" style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>學習心智圖</p>
       </div>
     </div>
     <div class="col-sm-4">
-      <button type="button" id="studyskill"data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#studyskilldiv">展開</button>
-      <div id="studyskilldiv" class="collapse">
+      <button type="button" id=""data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#demo">展開</button>
+      <div id="demo" class="collapse">
       <p>2023淡江大學機器人寒假高中營隊</p>
-      <img src="website/battalion/S__14467090.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467092.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467093.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467094.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467095.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467096.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467097.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467098.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467099.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467100.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467101.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467103.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467104.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467105.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467106.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467107.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467108.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467109.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-        <img src="website/battalion/S__14467110.jpg" alt="營隊" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-    </div>
+      <img src="img/internet/battalion/S__14467090.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>團康活動</p>
+        <img src="img/internet/battalion/S__14467092.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>團康活動</p>
+        <img src="img/internet/battalion/S__14467093.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>大地遊戲</p>
+        <img src="img/internet/battalion/S__14467094.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>程式學習</p>
+        <img src="img/internet/battalion/S__14467095.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>團體討論</p>
+        <img src="img/internet/battalion/S__14467096.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <p>機器人接線路</p>
+      <img src="img/internet/battalion/S__14467097.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <p>機器人接線路</p>
+      <img src="img/internet/battalion/S__14467098.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <p>程式學習</p>
+      <img src="img/internet/battalion/S__14467099.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <p>程式學習</p>
+      <img src="img/internet/battalion/S__14467100.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>機器成果</p>
+        <img src="img/internet/battalion/S__14467101.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>程式碼</p>
+        <img src="img/internet/battalion/S__14467103.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>程式碼</p>
+        <img src="img/internet/battalion/S__14467104.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>程式碼</p>
+        <img src="img/internet/battalion/S__14467105.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>問題解決1</p>
+        <img src="img/internet/battalion/S__14467106.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>問題解決2</p>
+        <img src="img/internet/battalion/S__14467107.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>課程學習</p>
+        <img src="img/internet/battalion/S__14467108.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467109.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <img src="img/internet/battalion/S__14467110.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
     </div>
     <div class="col-sm-4">
-      <button type="button" id="study"data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#studydiv">展開</button>
-      <div id="studydiv" class="collapse">
+      <button type="button" id=""data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#demo">展開</button>
+      <div id="demo" class="collapse">
       <h3>校內探究</h3>
       <p>自然實驗</p>
-      <img src="website/Explore/S__14467074.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-      <img src="website/Explore/S__14467076.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-      <img src="website/Explore/S__14467077.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-      <img src="website/Explore/S__14467078.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-      <img src="website/Explore/S__14467079.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-      <img src="website/Explore/S__14467080.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-      <img src="website/Explore/S__14467081.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-      <img src="website/Explore/S__14467082.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-      <img src="website/Explore/S__14467083.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-      <img src="website/Explore/S__14467084.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-      <img src="website/Explore/S__14467085.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-      <img src="website/Explore/S__14467087.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-      <img src="website/Explore/S__14467088.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
-      <img src="website/Explore/S__14467089.jpg" alt="探究" class=""style="height:50px;width:50px"onclick="changeImg(this)">
+      <img src="img/internet/explore/S__14467074.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467076.jpg" alt="探究" class=""style="height:100%;width:100%" 
+      <img src="img/internet/explore/S__14467077.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467078.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467079.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467080.jpg" alt="探究" class=""style="height:100%;width:100%" 
+      <img src="img/internet/explore/S__14467081.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467082.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467083.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467084.jpg" alt="探究" class=""style="height:100%;width:100%" 
+      <img src="img/internet/explore/S__14467085.jpg" alt="探究" class=""style="height:100%;width:100%" 
+      <img src="img/internet/explore/S__14467086.jpg" alt="探究" class=""style="height:100%;width:100%"
+      <img src="img/internet/explore/S__14467087.jpg" alt="探究" class=""style="height:100%;width:100%" 
+      <img src="img/internet/explore/S__14467088.jpg" alt="探究" class=""style="height:100%;width:100%" 
+      <img src="img/internet/explore/S__14467089.jpg" alt="探究" class=""style="height:100%;width:100%" 
+      
     </div>
   </div>
-
-  </div>
+</div>
 
 
 </body>
