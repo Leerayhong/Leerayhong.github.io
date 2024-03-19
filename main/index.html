@@ -33,10 +33,16 @@
           <a class="nav-link active"onclick="document.getElementById('studyprocess').click()" href="#studyprocess">學習經歷</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">課外學習</a>
+          <a class="nav-link active"onclick="document.getElementById('extra learning').click()" 
+href="#extra learning">課外學習</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">社團服務</a>
+            <a class="nav-link active"onclick="document.getElementById('school learning').click()" 
+href="#school learning">校內探究</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"onclick="document.getElementById('community services').click()" href="#community services">社團服務</a>
         </li>
       </ul>
     </div>
@@ -45,20 +51,20 @@
 <div class="container-fluid p-5 bg-primary text-white text-center">
   <h1>學習歷程</h1>
 </div>
-  <!-- Carousel -->
+  <!-- Carousel傳送帶 -->
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
     <!-- Indicators/dots -->
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0"class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"class="active"></button>
     </div>
 
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="abc.png" alt="證書" class="d-block w-100">
+          <img src="img/certificate/S__15056908.jpg"alt="證書" class="d-block w-100"style="height:100%;width:100%">
       </div>
       <div class="carousel-item">
         <img src="chicago.jpg" alt="獎盃" class="d-block w-100">
@@ -86,8 +92,9 @@
         <p>學習心智圖</p>
       </div>
     </div>
+    
     <div class="col-sm-4">
-      <button type="button" id=""data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#demo">展開</button>
+      <button type="button" id="battalion"data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#demo">展開</button>
       <div id="demo" class="collapse">
       <p>2023淡江大學機器人寒假高中營隊</p>
       <img src="img/internet/battalion/S__14467090.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
@@ -123,30 +130,29 @@
         <img src="img/internet/battalion/S__14467107.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
         <p>課程學習</p>
         <img src="img/internet/battalion/S__14467108.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <img src="img/internet/battalion/S__14467109.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <img src="img/internet/battalion/S__14467110.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+        <p>課程學習</p>
     </div>
     </div>
     <div class="col-sm-4">
-      <button type="button" id=""data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#demo">展開</button>
+      <button type="button" id="explore"data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#demo">展開</button>
       <div id="demo" class="collapse">
       <h3>校內探究</h3>
       <p>自然實驗</p>
-      <img src="img/internet/explore/S__14467074.jpg" alt="探究" class=""style="height:100%;width:100%"
-      <img src="img/internet/explore/S__14467076.jpg" alt="探究" class=""style="height:100%;width:100%" 
-      <img src="img/internet/explore/S__14467077.jpg" alt="探究" class=""style="height:100%;width:100%"
-      <img src="img/internet/explore/S__14467078.jpg" alt="探究" class=""style="height:100%;width:100%"
-      <img src="img/internet/explore/S__14467079.jpg" alt="探究" class=""style="height:100%;width:100%"
-      <img src="img/internet/explore/S__14467080.jpg" alt="探究" class=""style="height:100%;width:100%" 
-      <img src="img/internet/explore/S__14467081.jpg" alt="探究" class=""style="height:100%;width:100%"
-      <img src="img/internet/explore/S__14467082.jpg" alt="探究" class=""style="height:100%;width:100%"
-      <img src="img/internet/explore/S__14467083.jpg" alt="探究" class=""style="height:100%;width:100%"
-      <img src="img/internet/explore/S__14467084.jpg" alt="探究" class=""style="height:100%;width:100%" 
-      <img src="img/internet/explore/S__14467085.jpg" alt="探究" class=""style="height:100%;width:100%" 
-      <img src="img/internet/explore/S__14467086.jpg" alt="探究" class=""style="height:100%;width:100%"
-      <img src="img/internet/explore/S__14467087.jpg" alt="探究" class=""style="height:100%;width:100%" 
-      <img src="img/internet/explore/S__14467088.jpg" alt="探究" class=""style="height:100%;width:100%" 
-      <img src="img/internet/explore/S__14467089.jpg" alt="探究" class=""style="height:100%;width:100%" 
+      <img src="img/internet/explore/S__14467074.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <img src="img/internet/explore/S__14467076.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <img src="img/internet/explore/S__14467077.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <img src="img/internet/explore/S__14467078.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <img src="img/internet/explore/S__14467079.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <img src="img/internet/explore/S__14467080.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <img src="img/internet/explore/S__14467081.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <img src="img/internet/explore/S__14467082.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <img src="img/internet/explore/S__14467083.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <img src="img/internet/explore/S__14467084.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)"> 
+      <img src="img/internet/explore/S__14467085.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <img src="img/internet/explore/S__14467086.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <img src="img/internet/explore/S__14467087.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)"> 
+      <img src="img/internet/explore/S__14467088.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+      <img src="img/internet/explore/S__14467089.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)"> 
       
     </div>
   </div>
