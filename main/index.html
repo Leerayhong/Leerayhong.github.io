@@ -1,186 +1,220 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 5 Example</title>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-    /*--自己定義一個CSS*/
-    .imgcss{
-      width:50px;
-      height:50px ;
-    }
-  </style>
-  <script>
-    function bigImg(x) {
-      x.style.height = "20%";
-      x.style.width = "20%";
-    }
-    function smallImg(x) {
-      x.style.height = "50px";
-      x.style.width = "50px";
-    }
-  </script>
+  
 </head>
 <body>
-  <!--navbar-->
-   <nav class="navbar navbar-expand-sm bg-success navbar-dark">
-    <div class="container-fluid">
+
+<nav class="navbar navbar-expand-sm bg-success navbar-dark">
+  <div class="container-fluid">
+    <img src="website/battalion/S__14467098.jpg" alt="Logo" style="width:40px;" class="rounded-pill">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active"onclick="document.getElementById('studyprocess').click()" href="#studyprocess">學習經歷</a>
+          <a class="nav-link" href="#School">學校學習經歷</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" onclick="#" 
-href="#extra learning">課外學習</a>
+          <a class="nav-link" href="#learn">課外學習</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active"onclick="#" 
-href="#school learning">校內探究</a>
-          </li>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active"onclick="document.getElementById('community services').click()" href="#community services">社團服務</a>
-        </li>
+          <a class="nav-link" href="#group">社團經驗興趣愛好</a>
+        </li>    
       </ul>
     </div>
-  </nav>
-
-<div class="container-fluid p-5 bg-primary text-white text-center">
-  <h1>學習歷程</h1>
-</div>
-  <!-- Carousel傳送帶 -->
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0"class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"class="active"></button>
-    </div>
-
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-          <img src="website/certificate/S__15056908.jpg"alt="證書" class="d-block w-100"style="height:20%;width:20%">
-	  <img src="website/certificate/S__150569010.jpg"alt="證書" class="d-block w-100"style="height:20%;width:20%">
-	  <img src="website/certificate/S__150569011.jpg"alt="證書" class="d-block w-100"style="height:20%;width:20%">
-	  <img src="website/certificate/S__150569012.jpg"alt="證書" class="d-block w-100"style="height:20%;width:20%">
-	  <img src="website/certificate/S__150569013.jpg"alt="證書" class="d-block w-100"style="height:20%;width:20%">
-      </div>
-      <div class="carousel-item">
-        <img src="chicago.jpg" alt="獎盃" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="ny.jpg" alt="獎狀" class="d-block w-100">
-      </div>
-    </div>
-    
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
   </div>
-<div class="container-fluid mt-5">
-  <div class="row">
-    <div class="col-sm-4">
-      <button type="button" id="studyprocess"data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#demo">展開</button>
-      <div id="demo" class="collapse">
-        學習經歷
-        <img src="img/internet/learn.png" alt="學習心智圖" class="d-block" style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+</nav>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="website/learn.png" alt="學習歷程" class="d-block" style="height:500px;width:100%">
+      <div class="carousel-caption">
+        <h3>學習歷程</h3>
         <p>學習心智圖</p>
       </div>
-	 </div> 
-	 <div class="col-sm-8">
-        學習經歷:國小的課程中，造就了我國中對於XXX的熱愛，並且於高中的時候就往XXX的科目理研讀
-        
-     </div>
+    </div>
+    <div class="carousel-item">
+      <img src="website/battalion/S__14467098.jpg" alt="睿紘" class="d-block" style="height:500px;width:100%">
+      <div class="carousel-caption">
+        <h3>生活照片</h3>
+        <p>睿紘</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <center>
+	  <img src="website/certificate/combo.jpg" alt="圍棋證明" class="d-block" style="height:500px;width:100%">
+	  </center>
+      <div class="carousel-caption">
+        <h3>圍棋證明</h3>
+        <p>段位證書</p>
+      </div>  
     </div>
   </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<div class="row">
+  <div class="card col-sm-4">
+	<div class="card-header">學校學習經歷</div>
+	<div class="card-body">
+		<a href="#s1" class="btn btn-primary collapseCss" data-bs-toggle="collapse">國小</a>
+		<a href="#s2" class="btn btn-primary collapseCss" data-bs-toggle="collapse">國中</a>
+		<a href="#s3" class="btn btn-primary collapseCss" data-bs-toggle="collapse">高中</a>
+		<div id="s1" class="collapse">
+			國小經歷
+		</div>
+		
+		<div id="s2" class="collapse">
+			國中經歷
+		</div>
+		
+		<div id="s3" class="collapse">
+			高中經歷
+		</div>
+	</div>
+   </div>
+  
+  <div class="card col-sm-4">
+	  <div class="card-header">課外學習</div>
+	  <div class="card-body">
+	  <a href="#a1" class="btn btn-primary collapseCss" data-bs-toggle="collapse">程式學習(展開)</a>
+	   <a href="#a2" class="btn btn-primary collapseCss" data-bs-toggle="collapse">語言能力</a>
+	   <a href="#a4" class="btn btn-primary collapseCss" data-bs-toggle="collapse">數理考試(展開)</a>
+		<div id="a1" class="collapse">
+			營隊活動
+			<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">
+			照片code
+			</button>
+			
+			<!--練習如何組裝電腦-->
+			<!-- The Modal -->
+			<div class="modal" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
 
-<div class="container-fluid mt-5">
-  <div class="row">    
-    <div class="col-sm-4">
-      <button type="button" id="battalion"data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#demo">展開</button>
-      <div id="demo" class="collapse">
-      <p>2023淡江大學機器人寒假高中營隊</p>
-      <img src="website/battalion/S__14467090.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <p>團康活動</p>
-        <img src="website/battalion/S__14467092.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <p>團康活動</p>
-        <img src="website/battalion/S__14467093.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <p>大地遊戲</p>
-        <img src="website/battalion/S__14467094.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <p>程式學習</p>
-        <img src="website/battalion/S__14467095.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <p>團體討論</p>
-        <img src="website/battalion/S__14467096.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <p>機器人接線路</p>
-      <img src="website/battalion/S__14467097.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <p>機器人接線路</p>
-      <img src="website/battalion/S__14467098.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <p>程式學習</p>
-      <img src="website/battalion/S__14467099.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <p>程式學習</p>
-      <img src="website/battalion/S__14467100.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <p>機器成果</p>
-        <img src="website/battalion/S__14467101.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <p>程式碼</p>
-        <img src="website/battalion/S__14467103.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <p>程式碼</p>
-        <img src="website/battalion/S__14467104.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <p>程式碼</p>
-        <img src="website/battalion/S__14467105.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <p>問題解決1</p>
-        <img src="website/battalion/S__14467106.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <p>問題解決2</p>
-        <img src="website/battalion/S__14467107.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <p>課程學習</p>
-        <img src="website/battalion/S__14467108.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-        <p>課程學習</p>
-    </div>website/battalion
-    </div>
-    <div class="col-sm-8">
-      課外學習:
-      
-       </div>
-      </div>
-    </div>
+					<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">練習如何組裝電腦</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+
+					<!-- Modal body -->
+						<div class="modal-body">
+							<img src="website/battalion/S__14467100.jpg" alt="營隊" class=""style="height:100%;width:100%" onmouseover="bigImg(this)" onmouseout="smallImg(this)">
+						</div>
+
+					<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+			</div>
+		</div>
+
+	<!-- The Modal -->		
+			
+
+		</div>
 	
-  <div class="container-fluid mt-5">
-    <div class="row">    
-	
-    <div class="col-sm-4">
-      <button type="button" id="explore"data-bs-toggle="collapse" class="btn btn-primary" data-bs-target="#demo">展開</button>
-      <div id="demo" class="collapse">
-      <h3>校內探究</h3>
-      <p>自然實驗</p>
-      <img src="website/Explore/S__14467074.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <img src="website/Explore/S__14467076.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <img src="website/Explore/S__14467077.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <img src="website/Explore/S__14467078.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <img src="website/Explore/S__14467079.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <img src="website/Explore/S__14467080.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <img src="website/Explore/S__14467081.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <img src="website/Explore/S__14467082.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <img src="website/Explore/S__14467083.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <img src="website/Explore/S__14467084.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)"> 
-      <img src="website/Explore/S__14467085.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <img src="website/Explore/S__14467086.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <img src="website/Explore/S__14467087.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)"> 
-      <img src="website/Explore/S__14467088.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)">
-      <img src="website/Explore/S__14467089.jpg" alt="探究" class=""style="height:100%;width:100%"onmouseover="bigImg(this)" onmouseout="smallImg(this)"> 
+		<div id="a2" class="collapse">
+			我的母語為中文，第二熟悉的語言為英文，目前有考試證書
+		</div>	
+	  
+		<div id="a4" class="collapse">
+			數理考試
+		</div>		
+	 </div>
+  </div>
+  <div class="card col-sm-4">
+	<div class="card-header">社團經驗與興趣愛好</div>
+	<div class="card-body">
+		<a href="#c1" class="btn btn-primary" data-bs-toggle="collapse">社團經驗-圍棋</a>
+		<div id="c1" class="collapse">
+			2023年因為與同學參加了一次圍棋比賽，後來喜歡上圍棋，並且趁高二還有時間,去考了圍棋證照，目前圍棋四段
+		</div>
+		<a href="#c2" class="btn btn-primary" data-bs-toggle="collapse">興趣愛好</a>
+		<div id="c2" class="collapse">
+			撞球-<br>
+			羽球-<br>
+			桌球-<br>
+		</div>
+	</div>
+   </div>  
+</div>
+
+<div id="School" class="container-fluid mt-5 ">
+  <div class="row">
+    <div class="col-sm-6">
+       <img src="12479260.jpg" alt="New York" class="d-block" style="height:400px;width:100%">
+    </div>
+    <div class="col-sm-6 bg-success">
+      <h3>學校經歷</h3>
       
     </div>
   </div>
 </div>
+<div id="learn" class="container-fluid mt-5 ">
+  <div class="row">
+    <div class="col-sm-6">
+       <img src="image/study.png" alt="New York" class="d-block" style="height:400px;width:100%">
+    </div>
+    <div class="col-sm-6 bg-secondary">
+      <h3>學習心智圖</h3>
+      
+    </div>
+  </div>
+</div>
+ <div id="group" class="container-fluid ">
+ <div class="row">
+            <div class="col-sm-6 text-center bg-success">
+                <h2>遊戲介紹</h2>
+                <p class="lead" style=" text-align: left;"> &emsp;&emsp;</p>
 
+            </div>
+            <div class="col-sm-6">
+                <!--<video src="https://www.youtube.com/watch?v=rUaPekgxHV4" controls style="width: 600px; height:450px;"></video>-->
+				<iframe width="560px" height="450px" src="https://www.youtube.com/embed/KXFhlL1v27E?si=NTUPSrBKtV6SFPS1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+ </div>
+ </div>
+ <div class="container-fluid ">
+ <div class="row">
+            <div class="col-sm-6 text-center bg-warning">
+                <h2>眼部活動</h2>
+                <p class="lead" style=" text-align: left;"> &emsp;&emsp;</p>
 
+            </div>
+            <div class="col-sm-6">
+                <video src="370352.t.mp4" controls style="width: 600px; height:450px;"></video>
+				
+            </div>
+ </div>
+ </div>
 </body>
+</html>
